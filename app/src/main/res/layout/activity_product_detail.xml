@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--tools:context=".Food5_detail">-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp">
+
+                <!--viewpager used-->
+
+
+                <android.support.v4.view.ViewPager
+
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <!--circleindicator used-->
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/view"
+                    android:layout_gravity="bottom"
+                    app:ci_drawable="@drawable/ic_circle"
+                    app:ci_drawable_unselected="@drawable/ic_circle"
+                    app:ci_height="7dp"
+                    app:ci_width="7dp" />
+
+                <include layout="@layout/food5_detail_toolbar" />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="13.4dp">
+
+                <com.example.admin.flerken.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bàn phím cũ"
+                    android:textColor="#262628"
+                    android:textSize="19.2dp" />
+
+                <com.example.admin.flerken.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="203/17 Lê Văn Sỹ Quận 3"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14.4sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/RatingBar_Id"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:progressTint="#f05421"
+                        android:rating="4" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="27dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.example.admin.flerken.customfonts.MyTextView_Roboto_Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CÁC MÓN CẦN ĐÔI"
+                            android:textColor="#c2c4ca"
+                            android:textSize="14.4sp" />
+
+
+                        <com.example.admin.flerken.customfonts.MyTextView_Roboto_Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Màn hình - Chuột máy tính - Áo thun"
+                            android:textColor="#4a4a4a"
+                            android:textSize="14.4sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/food5_contact__ract_edit"
+                        android:gravity="center"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="12dp"
+                        android:id="@+id/LayoutContact">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:padding="1dp"
+                            android:src="@drawable/phone" />
+
+                        <com.example.admin.flerken.customfonts.MyTextView_Roboto_Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:padding="1dp"
+                            android:text="Liên hệ"
+                            android:textColor="#4a4a4a"
+                            android:textSize="14.4sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#f5f5f5"
+                android:padding="6dp" />
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+
+                <!--android:paddingTop="15dp">-->
+
+                <!--<com.example.admin.flerken.customfonts.MyTextView_Roboto_Regular-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="PHOTOS"-->
+                    <!--android:textColor="#c2c4ca"-->
+                    <!--android:paddingLeft="13.4dp"-->
+                    <!--android:textSize="14.4sp" />-->
+
+                <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:id="@+id/RecyclerView_Food5_Detail_Id"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:clipToPadding="false"-->
+                    <!--android:paddingLeft="13.3dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:paddingTop="10dp"-->
+                    <!--android:layout_marginBottom="15dp"/>-->
+
+            <!--</LinearLayout>-->
+
+
+            <ImageView
+                android:background="@drawable/map_demo"
+                android:layout_width="match_parent"
+                android:layout_height="197.7dp" />
+            <com.example.admin.flerken.customfonts.MyTextView_Roboto_Regular
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MÔ TẢ"
+                android:layout_marginLeft="15dp"
+                android:textSize="16.7sp"
+                android:textColor="#c1c5c6"/>
+            <com.example.admin.flerken.customfonts.MyTextView_Roboto_Regular
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đây là cái bàn phím mình mới mua về dùng 10 ngày, còn bảo hành
+Không xài nữa nên cần đổi một vài thứ khác."
+                android:layout_marginLeft="15dp"
+                android:textSize="16.7sp"
+                android:textColor="#000000"/>
+            <!--Descriptions-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#f5f5f5"
+                android:padding="6dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="13.4dp"
+                android:paddingTop="16dp">
+
+                <com.example.admin.flerken.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ĐỒ VẬT LIÊN QUAN"
+                    android:textColor="#c2c4ca"
+                    android:textSize="14.4sp" />
+
+                <com.example.admin.flerken.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:text="Xem thêm"
+                    android:textColor="#d22532"
+                    android:textSize="14.4sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="13.4dp">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/RecyclerView2_Food5_Detail_Id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="View more"
+                android:layout_marginTop="12dp"
+                android:textColor="#c2c4ca"
+                android:textSize="14.4sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#f5f5f5"
+                android:padding="6dp" />
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.example.admin.flerken.customfonts.Button_Roboto_Medium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main"
+        android:text="ĐỀ NGHỊ ĐỔI"
+        android:textColor="#ffffff"
+        android:textSize="14.4sp"
+        android:id="@+id/ButtonGiveGet"/>
+
+</RelativeLayout>

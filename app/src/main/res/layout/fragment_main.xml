@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F76B01">
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true">-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/labelplay"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Fragment Play"-->
+            <!--android:textSize="30sp"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:fontFamily="@font/vhvogu"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/EditTextPin"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_below="@+id/labelplay"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:textColorHint="#8B8E9E"-->
+            <!--android:textAlignment="center"-->
+            <!--android:hint="ENTER PIN"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:background="@android:color/white"-->
+            <!--android:textSize="18sp"-->
+            <!--android:fontFamily="@font/vhvogu"-->
+            <!--android:inputType="number"-->
+            <!--/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/ButtonEnterPin"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:text="ENTER"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:background="@android:color/black"-->
+            <!--android:layout_below="@+id/EditTextPin"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:textSize="18sp"-->
+            <!--android:fontFamily="@font/vhvogu"/>-->
+
+    <!--</RelativeLayout>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/TextViewMessageWrong"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:text="We didn't recognize that game PIN. Please check and try again"-->
+            <!--android:fontFamily="@font/vhvogu"-->
+            <!--android:textSize="12sp"-->
+            <!--android:paddingRight="15dp"-->
+            <!--android:paddingLeft="15dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="@android:color/holo_red_light"-->
+            <!--android:gravity="center"-->
+            <!--android:visibility="invisible"-->
+            <!--/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/roundcorners"
+            android:elevation="1dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                app:srcCompat="@drawable/magnify" />
+
+            <com.example.admin.flerken.customfonts.MyCustomEditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:background="#00000000"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Search by outlet"
+                android:inputType="textPersonName"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/corner_diff"
+            android:orientation="vertical">
+
+            <ImageButton
+
+                android:id="@+id/imageButtonAdd"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/main"
+                android:paddingBottom="2dp"
+                android:paddingRight="5dp"
+                android:paddingTop="9dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/plus_ic" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
